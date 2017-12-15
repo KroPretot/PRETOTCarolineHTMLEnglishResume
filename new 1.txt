@@ -1,0 +1,13 @@
+<SCRIPT>
+		function ContactDetailsPopUp{
+		alert("<h3>Contact details</h3>
+		<ul id="homepage_contact_details">
+		<li>Caroline PRETOT</li>
+		<li>23 years old</li>
+		<li>11 rue Fénelon</li>
+		<li>75010 Paris</li>
+		<li>caroline33@laposte.net</li>
+		<li>+33 6 83 37 53 82</li>
+		</ul>")
+		}
+		</SCRIPT>
