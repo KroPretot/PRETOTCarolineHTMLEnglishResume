@@ -1,6 +1,15 @@
+body
+{
+padding-left:5%;
+padding-right:5%;
+background-color:#FFBF00;
+color:#B40486;
+}
+/*Tableau de couleurs HTML : https://html-color-codes.info/Codes-couleur-HTML/ */
 h1,h2,h3
 {
-color: blue;
+color: white;
+font-family:sans-serif ;
 }
 #homepage_contact_details
 {
@@ -15,11 +24,12 @@ padding-right: 0px;
 padding-top:25px;
 padding-bottom:25px;
 background-color:red;
+font-family:sans-serif;
 }
 #homepage_menu li
 {
 display:inline;
-list-style-type: none;
+list-style-type:none;
 width: 5vw;
 padding-left:5%;
 padding-right:5%;
@@ -33,8 +43,16 @@ color:white;
 text-decoration:none;
 }
 
-body
+.homepage_blocs
 {
-padding-left:5%;
-padding-right:5%;
+list-style-type:none;
+background-color:white;
+width:50%;
+margin
+}
+.homepage_bloc
+{
+float:left;
+width:40%;
+background-color:black;
 }
