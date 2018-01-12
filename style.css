@@ -46,13 +46,12 @@ text-decoration:none;
 .homepage_blocs
 {
 list-style-type:none;
-background-color:white;
 width:50%;
-margin
+min-width:500px;
 }
 .homepage_bloc
 {
 float:left;
 width:40%;
-background-color:black;
+padding-right:10%;
 }
