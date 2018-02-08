@@ -13,10 +13,7 @@ $(document).ready(function() {
 	$('div.JavascriptTest2bis').mouseenter(function() {
 		$(this).fadeOut(1000);
 		});
-
-
-
-
-
-		
+	$('div.JavascriptTest3').click(function() {
+		$('div.JavascriptTest3').not(this).fadeOut(1000);
+		});		
 });

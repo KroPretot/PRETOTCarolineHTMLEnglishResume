@@ -6,10 +6,24 @@ background-color:#FFBF00;
 color:#B40486;
 }
 /*Tableau de couleurs HTML : https://html-color-codes.info/Codes-couleur-HTML/ */
+#portrait
+{
+width:10%;
+-webkit-transition: width 2s; /* Safari */
+transition: width 2s;
+}
+#portrait:hover
+{
+width:15%;
+}
 h1,h2,h3
 {
 color: white;
 font-family:sans-serif;
+}
+h1
+{
+font-size:4em;
 }
 #homepage_contact_details
 {
@@ -22,14 +36,12 @@ height:50px;
 width:50px;
 background-color:white;
 }
-
 #homepage_menu
 {
 padding-left: 0px;
 padding-right: 0px;
 padding-top:25px;
 padding-bottom:25px;
-background-color:red;
 font-family:sans-serif;
 }
 #homepage_menu li
@@ -37,18 +49,26 @@ font-family:sans-serif;
 display:inline;
 list-style-type:none;
 width: 5vw;
-padding-left:5%;
-padding-right:5%;
 padding-top:1%;
 padding-bottom:1%;
-background-color:black;
 }
 a
 {
 color:white;
 text-decoration:none;
 }
-
+a.menu
+{
+border:medium outset;
+font-weight:bold;
+padding:1%;
+background-color:#B40486;
+}
+a.menu:hover
+{
+color:black;
+border:medium inset;
+}
 .homepage_blocs
 {
 list-style-type:none;
@@ -61,6 +81,22 @@ float:left;
 width:40%;
 padding-right:10%;
 }
+#bouton_javascript a
+{
+color:#FFBF00;
+font-family:sans-serif;
+font-weight:bold;
+animation-name:clignote;
+animation-duration:2s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+@keyframes clignote
+{
+from {color:#FFBF00;}
+to {color:white;}
+}
+
 
 .JavascriptTest1
 {
@@ -82,12 +118,28 @@ background-color:yellow;
 }
 #green
 {
-background-color:green;	
+background-color:green;
 }
-.JavascriptTest2,.JavascriptTest2bis
+.JavascriptTest2,.JavascriptTest2bis,.JavascriptTest3
 {
 width:50px;
 height:50px;
 display:inline-block;
 background-color:black;	
+}
+#white
+{
+background-color:white;	
+}
+#purple
+{
+background-color:purple;	
+}
+#black
+{
+background-color:black;	
+}
+#pink
+{
+background-color:pink;	
 }
