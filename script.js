@@ -15,5 +15,5 @@ $(document).ready(function() {
 		});
 	$('div.JavascriptTest3').click(function() {
 		$('div.JavascriptTest3').not(this).fadeOut(1000);
-		});		
+		});	
 });
