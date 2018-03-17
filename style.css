@@ -98,6 +98,7 @@ to {color:white;}
 }
 
 /*Page Work experiences*/
+/* - Faire en sorte que les boutons dropdown soient fixés dans l'écran et donc manipulables à tout moment.*/
 /*les éléments des dropdowns*/
 .dropdown,.dropdownInfographie
 {
@@ -147,6 +148,7 @@ to {color:white;}
 /* - appliquer style à desc*/
 
 /* "bouton" test */
+/* - styler le "bouton" pour qu'il ressemble vraiment à un bouton (ex : https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 )*/
 	/*au hover*/
 .dropdown:hover .pictoCompetence
 {
