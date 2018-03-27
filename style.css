@@ -1,29 +1,57 @@
+/*ex: Intégration d'une police personnalisée*/
+@font-face {
+	font-family:'AlexBrush';
+	src:
+	/*url('font/MaPolice.eot') format('eot'),*/
+	/*url('MaPolice.svg') format('svg'),*/
+	url('font/alexbrush-regular-webfont.woff') format('woff'),
+	url('font/AlexBrush-Regular.ttf') format('truetype');
+}
 body
 {
-padding-left:5%;
-padding-right:5%;
-background-color:#FFBF00;
-color:#B40486;
+	padding-left:5%;
+	padding-right:5%;
+	background-color:#FFBF00;
+	color:#B40486;
 }
-/*Tableau de couleurs HTML : https://html-color-codes.info/Codes-couleur-HTML/ */
+/* - Tableau de couleurs HTML : https://html-color-codes.info/Codes-couleur-HTML/ */
+/*ex: CSS transition*/
 #portrait
 {
-width:10%;
--webkit-transition: width 2s; /* Safari */
-transition: width 2s;
+	width:10%;
+	-webkit-transition: width 2s; /* Safari */
+	transition: width 2s;
 }
 #portrait:hover
 {
-width:15%;
+	width:15%;
 }
 h1,h2,h3
 {
-color: white;
-font-family:sans-serif;
+	color: white;
+	font-family:sans-serif;
 }
 h1
 {
-font-size:4em;
+	font-size:4em;
+}
+#nom
+{
+	display:block;
+}
+/*ex: CSS Pseudo-element*/
+h3::before {
+	content:url(imgs/EtoilePleinePetite.png);
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	margin-right:0.5em;
+	vertical-align:top;
+	font-size:0.8em;
+}
+#prenom
+{
+font-family:AlexBrush,sans-serif;
+font-size:1em;
 }
 #homepage_contact_details
 {
@@ -38,19 +66,16 @@ background-color:white;
 }
 #homepage_menu
 {
-padding-left: 0px;
-padding-right: 0px;
-padding-top:25px;
-padding-bottom:25px;
-font-family:sans-serif;
+padding-left: 0vw;
+padding-right: 0vw;
+font-family:AlexBrush,sans-serif;
+font-size:4em;
 }
 #homepage_menu li
 {
-display:inline;
 list-style-type:none;
-width: 5vw;
-padding-top:1%;
-padding-bottom:1%;
+margin-top:7vh;
+margin-bottom:7vh;
 }
 a
 {
@@ -64,53 +89,70 @@ font-weight:bold;
 padding:1%;
 background-color:#B40486;
 }
+/*ex: CSS Pseudo-class*/
 a.menu:hover
 {
-color:black;
-border:medium inset;
+	color:black;
+	border:medium inset;
 }
 .homepage_blocs
 {
-list-style-type:none;
-width:50%;
-min-width:500px;
+	list-style-type:none;
+	width:50%;
+	min-width:500px;
 }
 .homepage_bloc
 {
-float:left;
-width:40%;
-padding-right:10%;
+	float:left;
+	width:40%;
+	padding-right:10%;
 }
+/*ex: CSS animation par keyframes*/
 #bouton_javascript a
 {
-color:#FFBF00;
-font-family:sans-serif;
-font-weight:bold;
-animation-name:clignote;
-animation-duration:2s;
-animation-direction: alternate;
-animation-iteration-count: infinite;
+	color:#FFBF00;
+	font-family:sans-serif;
+	font-weight:bold;
+	animation-name:clignote;
+	animation-duration:1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 @keyframes clignote
 {
-from {color:#FFBF00;}
-to {color:white;}
+	from {color:#FFBF00;}
+	to {color:white;}
 }
 
-/*Page Work experiences*/
-/* - Faire en sorte que les boutons dropdown soient fixés dans l'écran et donc manipulables à tout moment.*/
-/*les éléments des dropdowns*/
+
+/* Page WORK EXPERIENCES */
+.bandeauFixe
+{
+	position: fixed;
+	right: 0;
+	bottom:0;
+	top:0;
+	background-color:white;
+}
+
+/* éléments des dropdowns */
 .dropdown,.dropdownInfographie
 {
 	width:25vh;
+	min-width:125px;
 	height:25vh;
-	background-color:blue;
+	min-height:125px;
+	background-color:#FFBF00;
 	position:relative;
+	display: flex;
+	justify-content:center;
+	border:0px;
 }
-/* - fixer hauteur et largeur max de la div dropdown*/
 .pictoCompetence,.pictoCompetenceInfographie
 {
 	height:25vh;
+	min-height:125px;
+	margin:auto;
 }
 .dropdown-content-top,.dropdown-content-topInfographie
 {
@@ -121,11 +163,12 @@ to {color:white;}
 	top:0vh;
 	display: flex;
 	justify-content:center;
-	padding-top:3vh;
+	padding-top:2vh;
 }
 .petiteEtoile
 {
 	height:5vh;
+	min-height:20px;
 }
 .dropdown-content-bottom,.dropdown-content-bottomInfographie
 {
@@ -137,22 +180,25 @@ to {color:white;}
 	display: flex;
 	align-items:flex-end;
 	justify-content:center;
-	padding-bottom:3vh;
+	padding-bottom:2vh;
 }
 .desc,.descInfographie
 {
 	visibility:hidden;
-	color:pink;
+	color:#B40486;
+	font-weight:bold;
 	margin:0vh;
+	min-width:50px;
 }
-/* - appliquer style à desc*/
 
-/* "bouton" test */
+/* "bouton" de référence */
 /* - styler le "bouton" pour qu'il ressemble vraiment à un bouton (ex : https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 )*/
 	/*au hover*/
 .dropdown:hover .pictoCompetence
 {
-	visibility: hidden;
+	height:10vh;
+	min-height:50px;
+	margin:auto;
 }
 .dropdown:hover .dropdown-content-top
 {
@@ -165,17 +211,13 @@ to {color:white;}
 /* - au 1er clic : le même comportement qu'au hover*/
 /* - au 2ème clic : retour à l'état initial*/
 
-
 /* "bouton" Graphic design skills */
-.infographie
-{
-	transition-property: color;
-	transition-duration: 0s;
-}
 	/*au hover*/
 .dropdownInfographie:hover .pictoCompetenceInfographie
 {
-	visibility: hidden;
+	height:10vh;
+	min-height:50px;
+	margin:auto;
 }
 .dropdownInfographie:hover .dropdown-content-topInfographie
 {
@@ -186,11 +228,32 @@ to {color:white;}
 	visibility: visible;
 }
 /* - Regrouper les deux changement d'état ci-dessus vu qu'ils sont identiques et que le seul truc qui les différencie c'est l'élément de l'interface auquel ils sont appliqués. */
-.dropdownInfographie:hover .infographie
 /* - au survol : le texte de la bonne class change de forme ou de couleur*/
+/*...fonctionne pas
+dropdown-content-topInfographie:hover .infographie
+{
+	text-weight:bold;
+}
+.dropdown-content-bottomInfographie:hover .infographie
+{
+	text-weight:bold;
+}*/
 	/*au clic*/
+/* - au clic : les mêmes évènements qu'au survol*/
 
 /*Page tests Javascript/JQuery*/
+/* /!\ Truc très bizarre : la première instruction css ci-dessous est rendue inactive par je ne sais quoi... Cela explique la disparition des blocs de l'activité 1.*/
+.JavescriptTestGhost
+{
+}
+.JavascriptTest0
+{
+	width:15vw;
+	padding:10px;
+	margin:10px;
+	background-color:white;
+	display:inline-block;
+}
 .JavascriptTest1
 {
 	width:50px;
