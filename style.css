@@ -136,7 +136,7 @@ a.menu:hover
 }
 
 /* éléments des dropdowns */
-.dropdown,.dropdownInfographie
+.dropdownDesign,.dropdownUX,.dropdownPublishing,.dropdownInfographie
 {
 	width:25vh;
 	min-width:125px;
@@ -148,13 +148,13 @@ a.menu:hover
 	justify-content:center;
 	border:0px;
 }
-.pictoCompetence,.pictoCompetenceInfographie
+.pictoCompetenceDesign,.pictoCompetenceUX,.pictoCompetencePublishing,.pictoCompetenceInfographie
 {
 	height:25vh;
 	min-height:125px;
 	margin:auto;
 }
-.dropdown-content-top,.dropdown-content-topInfographie
+.dropdown-content-topDesign,.dropdown-content-topUX,.dropdown-content-topPublishing,.dropdown-content-topInfographie
 {
 	width:25vh;
 	height:25vh;
@@ -170,7 +170,7 @@ a.menu:hover
 	height:5vh;
 	min-height:20px;
 }
-.dropdown-content-bottom,.dropdown-content-bottomInfographie
+.dropdown-content-bottomDesign,.dropdown-content-bottomUX,.dropdown-content-bottomPublishing,.dropdown-content-bottomInfographie
 {
 	width:25vh;
 	height:25vh;
@@ -182,7 +182,7 @@ a.menu:hover
 	justify-content:center;
 	padding-bottom:2vh;
 }
-.desc,.descInfographie
+.descDesign,.descUX,.descPublishing,.descInfographie
 {
 	visibility:hidden;
 	color:#B40486;
@@ -191,26 +191,58 @@ a.menu:hover
 	min-width:50px;
 }
 
-/* "bouton" de référence */
+/* "bouton" Design skills */
 /* - styler le "bouton" pour qu'il ressemble vraiment à un bouton (ex : https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 )*/
 	/*au hover*/
-.dropdown:hover .pictoCompetence
+.dropdownDesign:hover .pictoCompetenceDesign
 {
 	height:10vh;
 	min-height:50px;
 	margin:auto;
 }
-.dropdown:hover .dropdown-content-top
+.dropdownDesign:hover .dropdown-content-topDesign
 {
 	visibility: visible;
 }
-.dropdown:hover .desc
+.dropdownDesign:hover .descDesign
 {
 	visibility: visible;
 }
 /* - au 1er clic : le même comportement qu'au hover*/
 /* - au 2ème clic : retour à l'état initial*/
 
+/* "bouton" User experience skills */
+	/*au hover*/
+.dropdownUX:hover .pictoCompetenceUX
+{
+	height:10vh;
+	min-height:50px;
+	margin:auto;
+}
+.dropdownUX:hover .dropdown-content-topUX
+{
+	visibility: visible;
+}
+.dropdownUX:hover .descUX
+{
+	visibility: visible;
+}
+/* "bouton" Publishing skills */
+	/*au hover*/
+.dropdownPublishing:hover .pictoCompetencePublishing
+{
+	height:10vh;
+	min-height:50px;
+	margin:auto;
+}
+.dropdownPublishing:hover .dropdown-content-topPublishing
+{
+	visibility: visible;
+}
+.dropdownPublishing:hover .descPublishing
+{
+	visibility: visible;
+}
 /* "bouton" Graphic design skills */
 	/*au hover*/
 .dropdownInfographie:hover .pictoCompetenceInfographie
@@ -241,7 +273,24 @@ dropdown-content-topInfographie:hover .infographie
 	/*au clic*/
 /* - au clic : les mêmes évènements qu'au survol*/
 
-/*Page tests Javascript/JQuery*/
+/* Page SKILLS */
+.SansPuce{
+	list-style-type: none;
+	padding:0%;
+}
+.Puce
+{
+	display:flex;
+	align-items:flex-end;
+	margin-bottom:2%;
+}
+.ContenuPuce
+{
+	width:6vw;
+	margin-right:1%;
+}
+
+/*Page TESTS JAVASCRIPT/JQUERY*/
 /* /!\ Truc très bizarre : la première instruction css ci-dessous est rendue inactive par je ne sais quoi... Cela explique la disparition des blocs de l'activité 1.*/
 .JavescriptTestGhost
 {

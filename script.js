@@ -6,16 +6,21 @@ function changerCouleur(){
 }*/	
 
 /*Page TESTS JS & JQUERY*/
+	/*JAVASCRIPT*/
 /*Test0*/
-/*...Piste Pou : document.getelementbyid.style=*/
-/*...fonctionne pas tout à fait
-Le bout de code [0] ou [1] ou... empêche de colorer tous les éléments de la class "impair"
-exercice duquel est tiré le code : https://www.w3schools.com/Jsref/tryit.asp?filename=tryjsref_document_getelementsbyclassname2*/
-function changerCouleur() {
+/*function changerCouleur(){
+	document.getElementsByClassName("impair").style.backgroundColor="blue";
+}
+...fonctionne pas*/
+/*function changerCouleur() {
     var x = document.getElementsByClassName("impair");
     x[0].style.backgroundColor = "red";
 }
-/*JQuery*/
+...fonctionne pas tout à fait
+Le bout de code [0] ou [1] ou... empêche de colorer tous les éléments de la class "impair"
+exercice duquel est tiré le code : https://www.w3schools.com/Jsref/tryit.asp?filename=tryjsref_document_getelementsbyclassname2
+*/
+	/*JQUERY*/
 $(document).ready(function() {
 /*Test1*/
 	$('div.JavascriptTest1').click(function() {
@@ -23,12 +28,9 @@ $(document).ready(function() {
 			height:'+=10px'
 		});
 	});
-
-	//click peut être remplacé par (entre autre) : mouseenter et mouseleave
-	//height peut être remplacé par (entre autre) : width
 /*Test2*/
 	$('div.JavascriptTest2').mouseenter(function() {
-		//Toggle permet de basculer un élément d'un état à un autre. ex : si l'élément est visible, il devient invisible.
+		//PI : Toggle permet de basculer un élément d'un état à un autre. ex : si l'élément est visible, il devient invisible.
 		$(this).toggle(1000);
 		});
 	$('div.JavascriptTest2bis').mouseenter(function() {
