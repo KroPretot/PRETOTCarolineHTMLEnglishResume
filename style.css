@@ -130,13 +130,11 @@ a.menu:hover
 {
 	position: fixed;
 	right: 0;
-	bottom:0;
 	top:0;
-	background-color:white;
 }
 
 /* éléments des dropdowns */
-.dropdownDesign,.dropdownUX,.dropdownPublishing,.dropdownInfographie
+.dropdownDesign,.dropdownUX,.dropdownPublishing,.dropdownInfographie,.dropdownIcono
 {
 	width:25vh;
 	min-width:125px;
@@ -148,13 +146,13 @@ a.menu:hover
 	justify-content:center;
 	border:0px;
 }
-.pictoCompetenceDesign,.pictoCompetenceUX,.pictoCompetencePublishing,.pictoCompetenceInfographie
+.pictoCompetenceDesign,.pictoCompetenceUX,.pictoCompetencePublishing,.pictoCompetenceInfographie,.pictoCompetenceIcono
 {
 	height:25vh;
 	min-height:125px;
 	margin:auto;
 }
-.dropdown-content-topDesign,.dropdown-content-topUX,.dropdown-content-topPublishing,.dropdown-content-topInfographie
+.dropdown-content-topDesign,.dropdown-content-topUX,.dropdown-content-topPublishing,.dropdown-content-topInfographie,.dropdown-content-topIcono
 {
 	width:25vh;
 	height:25vh;
@@ -170,7 +168,7 @@ a.menu:hover
 	height:5vh;
 	min-height:20px;
 }
-.dropdown-content-bottomDesign,.dropdown-content-bottomUX,.dropdown-content-bottomPublishing,.dropdown-content-bottomInfographie
+.dropdown-content-bottomDesign,.dropdown-content-bottomUX,.dropdown-content-bottomPublishing,.dropdown-content-bottomInfographie,.dropdown-content-bottomIcono
 {
 	width:25vh;
 	height:25vh;
@@ -182,13 +180,24 @@ a.menu:hover
 	justify-content:center;
 	padding-bottom:2vh;
 }
-.descDesign,.descUX,.descPublishing,.descInfographie
+.descDesign,.descUX,.descPublishing,.descInfographie,.descIcono
 {
 	visibility:hidden;
 	color:#B40486;
 	font-weight:bold;
 	margin:0vh;
 	min-width:50px;
+}
+.dropdown-content-buttonDesign,.dropdown-content-buttonUX,.dropdown-content-buttonPublishing,.dropdown-content-buttonInfographie,.dropdown-content-buttonIcono
+{
+	width:25vh;
+	min-width:125px;
+	height:25vh;
+	min-height:125px;
+	background-color:transparent;
+	border:0px;
+	visibility:hidden;
+	position:absolute;
 }
 
 /* "bouton" Design skills */
@@ -205,6 +214,10 @@ a.menu:hover
 	visibility: visible;
 }
 .dropdownDesign:hover .descDesign
+{
+	visibility: visible;
+}
+.dropdownDesign:hover .dropdown-content-buttonDesign
 {
 	visibility: visible;
 }
@@ -227,6 +240,10 @@ a.menu:hover
 {
 	visibility: visible;
 }
+.dropdownUX:hover .dropdown-content-buttonUX
+{
+	visibility: visible;
+}
 /* "bouton" Publishing skills */
 	/*au hover*/
 .dropdownPublishing:hover .pictoCompetencePublishing
@@ -240,6 +257,10 @@ a.menu:hover
 	visibility: visible;
 }
 .dropdownPublishing:hover .descPublishing
+{
+	visibility: visible;
+}
+.dropdownPublishing:hover .dropdown-content-buttonPublishing
 {
 	visibility: visible;
 }
@@ -259,6 +280,30 @@ a.menu:hover
 {
 	visibility: visible;
 }
+.dropdownInfographie:hover .dropdown-content-buttonInfographie
+{
+	visibility: visible;
+}
+/* "bouton" Iconographic researche skills */
+	/*au hover*/
+.dropdownIcono:hover .pictoCompetenceIcono
+{
+	height:10vh;
+	min-height:50px;
+	margin:auto;
+}
+.dropdownIcono:hover .dropdown-content-topIcono
+{
+	visibility: visible;
+}
+.dropdownIcono:hover .descIcono
+{
+	visibility: visible;
+}
+.dropdownIcono:hover .dropdown-content-buttonIcono
+{
+	visibility: visible;
+}
 /* - Regrouper les deux changement d'état ci-dessus vu qu'ils sont identiques et que le seul truc qui les différencie c'est l'élément de l'interface auquel ils sont appliqués. */
 /* - au survol : le texte de la bonne class change de forme ou de couleur*/
 /*...fonctionne pas
@@ -272,6 +317,12 @@ dropdown-content-topInfographie:hover .infographie
 }*/
 	/*au clic*/
 /* - au clic : les mêmes évènements qu'au survol*/
+
+/* autres éléments de la page */
+.competences
+{
+	width:50vw;
+}
 
 /* Page SKILLS */
 .SansPuce{
@@ -291,7 +342,11 @@ dropdown-content-topInfographie:hover .infographie
 }
 
 /*Page TESTS JAVASCRIPT/JQUERY*/
-/* /!\ Truc très bizarre : la première instruction css ci-dessous est rendue inactive par je ne sais quoi... Cela explique la disparition des blocs de l'activité 1.*/
+.x
+{
+	background-color:transparent;
+}
+/* /!\ Truc très bizarre : la première instruction css ci-dessous est rendue inactive par je ne sais quoi...*/
 .JavescriptTestGhost
 {
 }

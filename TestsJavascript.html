@@ -8,21 +8,45 @@
 
 <h1>Test 0 :</h1>
 <p>Avancement de la cr&eacute;ation des boutons de la page WorkExperience :</p>
-	<ul>Fait :
-		<li>au survol : le texte d'une class en particulier change d'aspect</li>
-		<li>au 1er clic : la m&#234;me chose qu'au survol</li>
-	</ul>
-	<ul>&#192; faire :
-		<li>&#224; la fin du survol : le texte reprend son &eacute;tat initial</li>
-		<li>au 2&#232;me clic : la m&#234;me chose qu'au survol</li>
-	</ul>
-<button type="button" onclick="myFunction1()" onmouseenter="myFunction1()" onmouseleave="myFunction1bis()">X</button>
-<button type="button" onclick="myFunction2()" onmouseenter="myFunction2()">X</button>
+	<div class="dropdownDesign">
+	<img src="imgs/EtoileVide.png" class="pictoCompetenceDesign" alt="Design skills">
+		<div class="dropdown-content-topDesign">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+		</div>
+		<div class="dropdown-content-bottomDesign">
+			<p class="descDesign">Design</p>
+		</div>
+	<button type="button" class="dropdown-content-buttonDesign" onclick="myFunction1()" onmouseenter="myFunction1()" onmouseleave="myFunction1bis()"></button>
+	</div>
+	<div class="dropdownDesign">
+	<img src="imgs/EtoileVide.png" class="pictoCompetenceDesign" alt="Design skills">
+		<div class="dropdown-content-topDesign">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+			<img src="imgs/EtoilePleine.png" class="petiteEtoile" alt="etoile pleine">
+		</div>
+		<div class="dropdown-content-bottomDesign">
+			<p class="descDesign">Design2</p>
+		</div>
+	<button type="button" class="dropdown-content-buttonDesign" onclick="myFunction2()" onmouseenter="myFunction2()" onmouseleave="myFunction2bis()"></button>
+	</div>
 
-<p class='txt'>Paragraphe test paragraphe test paragraphe test paragraphe test paragraphe test</p>
 <p class='txt'>Paragraphe test paragraphe test paragraphe test paragraphe test paragraphe test</p>
 <p class='txt2'>Paragraphe test paragraphe test paragraphe test paragraphe test paragraphe test</p>
 <p class='txt'>Paragraphe test paragraphe test paragraphe test paragraphe test paragraphe test</p>
+
+<ul>Fait :
+		<li>au survol : le texte d'une class en particulier change d'aspect</li>
+		<li>&#224; la fin du survol : le texte reprend son &eacute;tat initial</li>
+</ul>
+<ul>&#192; faire :
+		<li>au 1er clic : la m&#234;me chose qu'au survol</li>
+		<li>au 2&#232;me clic : la m&#234;me chose qu'&#224; la fin du survol</li>
+		<li>&#224; la prise de focus : la m&#234;me chose qu'au survol</li>
+		<li>&#224; la fin de la prise de focus : la m&#234;me chose qu'&#224; la fin du survol</li>
+</ul>
 
 <!--Modifier le style d'une ligne sp&eacute;cifique d'une liste gr&acirc;ce &agrave; sa classe
 	<div class="JavascriptTest0" onclick="changerCouleur">Cliquer ici pour changer le style des chiffres pairs de la liste ci-dessous.</div>

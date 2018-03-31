@@ -4,6 +4,7 @@ exemple w3shool fonctionne pas chez moi...https://www.w3schools.com/js/tryit.asp
 function changerCouleur(){
 	document.getElementByClassName('infographie').style.fontSize='35px'
 }*/	
+/*- Réussir à intégrer les scripts de la page Workexperience.html dans la page script.js.*/
 
 /*Page TESTS JS & JQUERY*/
 	/*JAVASCRIPT*/
@@ -15,14 +16,28 @@ function changerCouleur(){
 		var x = document.getElementsByClassName("txt");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			x[i].style.backgroundColor = "red";
+			x[i].style.backgroundColor = "white";
+		}
+	}
+		function myFunction1bis(){
+		var x = document.getElementsByClassName("txt");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.backgroundColor = "transparent";
 		}
 	}
 	function myFunction2(){
 		var x = document.getElementsByClassName("txt2");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			x[i].style.backgroundColor = "red";
+			x[i].style.backgroundColor = "white";
+		}
+	}
+	function myFunction2bis(){
+		var x = document.getElementsByClassName("txt2");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.backgroundColor = "transparent";
 		}
 	}
 
