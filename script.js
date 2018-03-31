@@ -8,7 +8,25 @@ function changerCouleur(){
 /*Page TESTS JS & JQUERY*/
 	/*JAVASCRIPT*/
 /*Test0*/
-/*function changerCouleur(){
+	/*function myFunction() {
+		document.getElementById('txt').style.backgroundColor = 'red';
+	}*/
+	function myFunction1(){
+		var x = document.getElementsByClassName("txt");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.backgroundColor = "red";
+		}
+	}
+	function myFunction2(){
+		var x = document.getElementsByClassName("txt2");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			x[i].style.backgroundColor = "red";
+		}
+	}
+
+/*function changerCouleur{
 	document.getElementsByClassName("impair").style.backgroundColor="blue";
 }
 ...fonctionne pas*/
