@@ -14,7 +14,7 @@ body
 	background-color:#FFBF00;
 	color:#B40486;
 }
-/* - Tableau de couleurs HTML : https://html-color-codes.info/Codes-couleur-HTML/ */
+
 /*ex: CSS transition*/
 #portrait
 {
@@ -134,7 +134,7 @@ a.menu:hover
 }
 
 /* éléments des dropdowns */
-.dropdownDesign,.dropdownUX,.dropdownPublishing,.dropdownInfographie,.dropdownIcono
+.dropdownDesign,.dropdownUX,.dropdownPublishing,.dropdownInfographie
 {
 	width:25vh;
 	min-width:125px;
@@ -146,13 +146,13 @@ a.menu:hover
 	justify-content:center;
 	border:0px;
 }
-.pictoCompetenceDesign,.pictoCompetenceUX,.pictoCompetencePublishing,.pictoCompetenceInfographie,.pictoCompetenceIcono
+.pictoCompetenceDesign,.pictoCompetenceUX,.pictoCompetencePublishing,.pictoCompetenceInfographie
 {
 	height:25vh;
 	min-height:125px;
 	margin:auto;
 }
-.dropdown-content-topDesign,.dropdown-content-topUX,.dropdown-content-topPublishing,.dropdown-content-topInfographie,.dropdown-content-topIcono
+.dropdown-content-topDesign,.dropdown-content-topUX,.dropdown-content-topPublishing,.dropdown-content-topInfographie
 {
 	width:25vh;
 	height:25vh;
@@ -168,7 +168,7 @@ a.menu:hover
 	height:5vh;
 	min-height:20px;
 }
-.dropdown-content-bottomDesign,.dropdown-content-bottomUX,.dropdown-content-bottomPublishing,.dropdown-content-bottomInfographie,.dropdown-content-bottomIcono
+.dropdown-content-bottomDesign,.dropdown-content-bottomUX,.dropdown-content-bottomPublishing,.dropdown-content-bottomInfographie
 {
 	width:25vh;
 	height:25vh;
@@ -180,7 +180,7 @@ a.menu:hover
 	justify-content:center;
 	padding-bottom:2vh;
 }
-.descDesign,.descUX,.descPublishing,.descInfographie,.descIcono
+.descDesign,.descUX,.descPublishing,.descInfographie
 {
 	visibility:hidden;
 	color:#B40486;
@@ -188,7 +188,7 @@ a.menu:hover
 	margin:0vh;
 	min-width:50px;
 }
-.dropdown-content-buttonDesign,.dropdown-content-buttonUX,.dropdown-content-buttonPublishing,.dropdown-content-buttonInfographie,.dropdown-content-buttonIcono
+.dropdown-content-buttonDesign,.dropdown-content-buttonUX,.dropdown-content-buttonPublishing,.dropdown-content-buttonInfographie
 {
 	width:25vh;
 	min-width:125px;
@@ -201,7 +201,6 @@ a.menu:hover
 }
 
 /* "bouton" Design skills */
-/* - styler le "bouton" pour qu'il ressemble vraiment à un bouton (ex : https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 )*/
 	/*au hover*/
 .dropdownDesign:hover .pictoCompetenceDesign
 {
@@ -221,8 +220,6 @@ a.menu:hover
 {
 	visibility: visible;
 }
-/* - au 1er clic : le même comportement qu'au hover*/
-/* - au 2ème clic : retour à l'état initial*/
 
 /* "bouton" User experience skills */
 	/*au hover*/
@@ -284,39 +281,6 @@ a.menu:hover
 {
 	visibility: visible;
 }
-/* "bouton" Iconographic researche skills */
-	/*au hover*/
-.dropdownIcono:hover .pictoCompetenceIcono
-{
-	height:10vh;
-	min-height:50px;
-	margin:auto;
-}
-.dropdownIcono:hover .dropdown-content-topIcono
-{
-	visibility: visible;
-}
-.dropdownIcono:hover .descIcono
-{
-	visibility: visible;
-}
-.dropdownIcono:hover .dropdown-content-buttonIcono
-{
-	visibility: visible;
-}
-/* - Regrouper les deux changement d'état ci-dessus vu qu'ils sont identiques et que le seul truc qui les différencie c'est l'élément de l'interface auquel ils sont appliqués. */
-/* - au survol : le texte de la bonne class change de forme ou de couleur*/
-/*...fonctionne pas
-dropdown-content-topInfographie:hover .infographie
-{
-	text-weight:bold;
-}
-.dropdown-content-bottomInfographie:hover .infographie
-{
-	text-weight:bold;
-}*/
-	/*au clic*/
-/* - au clic : les mêmes évènements qu'au survol*/
 
 /* autres éléments de la page */
 .competences
